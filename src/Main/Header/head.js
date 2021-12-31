@@ -40,3 +40,37 @@ class Head extends Component {
 }
 
 export { Head };
+
+
+//자동 슬라이드 배너 (swiper)
+//먼저 npm install --save swiper 설치.
+// scss 파일을 import할 때 에러가 발생한다면 sass 설치를 해야 한다 > npm install --save sass
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";   // 추가
+// import "swiper/swiper.scss";
+// import "swiper/components/navigation/navigation.scss";
+// import "swiper/components/pagination/pagination.scss";
+
+// SwiperCore.use([Navigation, Pagination, Autoplay])   // 추가
+
+// function MainPage() {
+//   return(
+//     <div>
+//       <Swiper
+//         className="banner"
+//         spaceBetween={50}
+//         slidesPerView={1}
+//         navigation
+//         pagination={{ clickable: true }}
+//         autoplay={{ delay: 1000 }}   // 추가
+//       >
+//         <SwiperSlide>Slide 1</SwiperSlide>
+//         <SwiperSlide>Slide 2</SwiperSlide>
+//         <SwiperSlide>Slide 3</SwiperSlide>
+//         <SwiperSlide>Slide 4</SwiperSlide>
+//       </Swiper>
+//     </div>
+//   )
+// }
+
+// export default MainPage;

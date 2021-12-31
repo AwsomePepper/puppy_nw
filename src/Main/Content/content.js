@@ -25,3 +25,94 @@ class Content extends Component {
 }
 
 export { Content };
+
+
+
+//Flex Direction
+// import React, {Component} from 'react';
+// import {StyleSheet, Text, View} from 'react-native';
+
+// type Props = {};
+// export default class App extends Component<Props> {
+//   render() {
+//     return (
+//       <View style={styles.container}>
+//         <View style={styles.item1} />
+//         <View style={styles.item2} />
+//         <View style={styles.item3} />
+//       </View>
+//     );
+//   }
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     flexDirection: 'row', // 혹은 'column'
+//   },
+//   item1: {
+//     flex: 1,
+//     backgroundColor: 'red',
+//   },
+//   item2: {
+//     flex: 1,
+//     backgroundColor: 'yellow',
+//   },
+//   item3: {
+//     flex: 1,
+//     backgroundColor: 'green',
+//   },
+// });
+
+
+// Align Items
+// import React, {Component} from 'react';
+// import {StyleSheet, Text, View} from 'react-native';
+
+// type Props = {};
+// export default class App extends Component<Props> {
+//   render() {
+//     return (
+//       <View style={styles.container}>
+//         <View style={styles.item1}/>
+//       </View>
+//     );
+//   }
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     flexDirection:'row', // > column 으로 변경해야 가로 정렬이 됨 
+//     alignItems:'flex-start', // > 좌측
+//   },
+//   item1: {
+//     width:50,
+//     height:50,
+//     backgroundColor: 'red',
+//   },
+// });
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     flexDirection:'row',
+//     alignItems:'center', // > 센터
+//   },
+//   item1: {
+//     width:50,
+//     height:50,
+//     backgroundColor: 'red',
+//   },
+// });
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     flexDirection:'row',
+//     alignItems:'flex-end', // > 우측
+//   },
+//   item1: {
+//     width:50,
+//     height:50,
+//     backgroundColor: 'red',
+//   },
+// });
