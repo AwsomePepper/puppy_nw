@@ -3,6 +3,7 @@ import { Component } from "react";
 class Content extends Component {
     render() {
         return (
+            
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">

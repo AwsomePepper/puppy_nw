@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import { Nav } from './Main/Nav';
-import { Head } from './Main/Head';
-import { Content } from './Main/Content';
-import { Footer } from './Main/Footer';
+import { Nav } from './Main/Nav/nav';
+import { Head } from './Main/Header/head';
+import { Content } from './Main/Content/content';
+import { Footer } from './Main/Footer/footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,11 @@ class App extends Component {
       <div className="App">
         <Nav></Nav>
         <Head></Head>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/create" element={<Head/>}></Route>
+          </Routes>
+        </BrowserRouter>
         <Content></Content>
         <Footer></Footer>
       </div>
