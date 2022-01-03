@@ -1,5 +1,8 @@
 import { Component } from "react";
 import axios  from 'axios';
+import './App.css';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //https://myanjini.tistory.com/entry/axios%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%82%A0%EC%94%A8-%EC%A0%95%EB%B3%B4-%EC%A1%B0%ED%9A%8C 참고
 //날씨 key=536c9ac88ce061e5682c2733f59941a5
