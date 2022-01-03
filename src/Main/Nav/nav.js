@@ -1,27 +1,39 @@
-import { Component } from "react";
+
+import { Component } from 'react/cjs/react.production.min';
+import './App.css';
 
 
-// Responsive navbar
+
 class Nav extends Component {
     render() {
-        return (
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        return(
+            <header>
+                <h1>멍트워크</h1>
+                </header>
         );
-
     }
 }
 
-export { Nav };
+
+
+
+
+
+// const Nav = () => {  //메뉴
+
+//     return (
+//       <nav style={{'backgroundColor': '#FFE57F'}} className="navbar navbar-expand-lg navbar-light naver-fixed-top">
+//                   <div className="container-fluid">
+//                       <a className="navbar-brand " href="/" >멍트워크</a>
+//                       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+//                       <div className="collapse navbar-collapse" id="navbarSupportedContent">
+//                           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+//                               <li className="nav-item"><a className="nav-link" href="#">Map</a></li>
+//                           </ul>
+//                       </div>
+//                   </div>
+//               </nav>
+  
+//     )
+//   }
+// export { Nav };
