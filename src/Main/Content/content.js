@@ -7,7 +7,7 @@ let mapRef = null;
 function Content() {
 
     mapRef = useRef();
-    navigator.geolocation.getCurrentPosition((position) => {
+    navigator.geolocation.watchPosition((position) => {
 
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;

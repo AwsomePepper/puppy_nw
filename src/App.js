@@ -55,21 +55,21 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      
       {/* <Header /> */}
-      <Image />
       {/*{ show && <Image /> }*/}
-    {/* <Content />
+      {/* <Content />
       {/* <Content2 /> */}
       <BrowserRouter>
         <Routes>
-          
+          <Route path="/" element={<Image />}></Route>
+          <Route path="/" element={<Footer />}></Route>
+
           <Route path="/map" element={<Content />}></Route>
           <Route path="/signup" element={ <SignUp />}></Route>
-            
           <Route path="/signin" element={<SignIn />}></Route>
         </Routes>
       </BrowserRouter>
-      <Footer></Footer>
 
     </div>
   );
