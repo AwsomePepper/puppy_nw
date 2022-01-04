@@ -1,5 +1,7 @@
-
+import React,{ Component } from 'react';
 import './App.css'
+
+
 const Header = () => {  //로그인
   return (
     <div className="text-white text-center">
@@ -11,3 +13,4 @@ const Header = () => {  //로그인
   </div>
   )
 }
+export default Header;
