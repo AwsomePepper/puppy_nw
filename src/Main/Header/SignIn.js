@@ -1,19 +1,14 @@
 
 import axios from 'axios';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { Component } from 'react';
-import './App.css';
 
 
 
 
-
-
-class SignIn extends Component{
-  render() {
+function SignIn () {
     return (
-      <div class="container mt-5">
-        <div class="row">
+      <div className="container mt-5">
+        <div className="row">
           <form onSubmit={(e) => {
             e.preventDefault(); //form의 기본기능 막기
             const email = e.target['0'].value;
@@ -41,23 +36,23 @@ class SignIn extends Component{
             })
 
           }}>
-            <div class="mb-3 input-group flex-nowrap">
-              <span class="input-group-text">✉️</span>
-              <input type="text" class="form-control" name="email" placeholder="email" />
+            <div className="mb-3 input-group flex-nowrap">
+              <span className="input-group-text">✉️</span>
+              <input type="text" className="form-control" name="email" placeholder="email" />
             </div>
-            <div class="mb-3 input-group flex-nowrap">
-              <span class="input-group-text">🔒</span>
-              <input type="password" class="form-control" name="pwd" placeholder="password" />
+            <div className="mb-3 input-group flex-nowrap">
+              <span className="input-group-text">🔒</span>
+              <input type="password" className="form-control" name="pwd" placeholder="password" />
             </div>
-            <div class="d-grid gap-2">
-              <button style={{ 'backgroundColor': '#2C6BB2' }} class="btn" id="signin">Log In</button>
+            <div className="d-grid gap-2">
+              <button style={{ 'backgroundColor': '#2C6BB2' }} className="btn" id="signin">Log In</button>
             </div>
           </form>
         </div>
       </div>
     )
   }
-}
+
 
   export default SignIn;
 
