@@ -4,14 +4,16 @@ import icon2 from './신규회원 배너.png';
 import icon3 from './사료 배너 .png';
 import icon4 from './산책 배너.png';
 import { Carousel } from 'react-bootstrap';
+import Footer from '../Footer/footer';
 
 
 
 const Content2 = () => { //슬라이드 배너 
 
     return (
-      <div style={{ display: 'block', width: 800, padding: -20,
-     margin: "auto" }}> 
+     
+      <div style={{ display: 'block', width: '100%','margin-top':'100px'
+     }}> 
       <Carousel variant="dark">
         <Carousel.Item>
           <img
@@ -38,7 +40,9 @@ const Content2 = () => { //슬라이드 배너
          
         </Carousel.Item>
       </Carousel>
+  
     </div>
+  
     )
   }
 

@@ -1,13 +1,13 @@
 
 import axios from 'axios';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { Component } from 'react';
 
 
 const SignUp = () => {
   return (
     <div class="container mt-5">
-      <div class="row">
+      <div className= "row justify-content-center"
+        style={{'margin':'auto','margin-bottom':'200px','margin-top':'200px','width':'900px'}}>
         <form onSubmit={(e) => {
           e.preventDefault();
           const formData = new FormData();
@@ -44,7 +44,9 @@ const SignUp = () => {
           </div>
         </form>
       </div>
+
     </div>
+    
   )
 }
 
