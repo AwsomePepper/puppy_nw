@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 function Nav()  {  //메뉴
 
     return (
-      <nav style={{ 'backgroundColor': '#FFE57F' }} className="navbar navbar-expand-lg navbar-light naver-fixed-top">
+      <nav style={{ 'backgroundColor':'#FFEE58'}} className="navbar navbar-expand-lg navbar-light naver-fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand " href="/" >멍트워크</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
