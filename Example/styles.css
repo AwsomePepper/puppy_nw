@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* 받아온 파일임 
+/* 받아온 파일임
 *!
 * Start Bootstrap - Blog Home v5.0.7 (https://startbootstrap.com/template/blog-home)
 * Copyright 2013-2021 Start Bootstrap
@@ -79,7 +79,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  -family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
