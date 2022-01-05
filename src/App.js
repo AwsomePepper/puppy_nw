@@ -12,58 +12,19 @@ import SignIn from './Main/Header/SignIn';
 import Image from './Main/Content/Image';
 
 
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";   // 추가
-// import "swiper/swiper.scss";
-// import "swiper/components/navigation/navigation.scss";
-// import "swiper/components/pagination/pagination.scss";
-// SwiperCore.use([Navigation, Pagination, Autoplay])   // 추가
-
-
-
-
-
-
-
-// const Content2 = () => { //배너
-
-//   return (
-//     <div>
-//       <Swiper
-//         className="banner"
-//         spaceBetween={50}
-//         slidesPerView={1}
-//         navigation
-//         pagination={{ clickable: true }}
-//         autoplay={{ delay: 1000 }}   // 추가
-//       >
-//         <SwiperSlide>Slide 1</SwiperSlide>
-//         <SwiperSlide>Slide 2</SwiperSlide>
-//         <SwiperSlide>Slide 3</SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//       </Swiper>
-//     </div>
-//   )
-// }
-
-
-
-
 function App() {
   const [show, setShow] = useState(false);
 
   return (
     <div className="App">
       <Nav />
-      
+      <Footer></Footer>
       {/* <Header /> */}
-      {/*{ show && <Image /> }*/}
       {/* <Content />
       {/* <Content2 /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Image />}></Route>
-          <Route path="/" element={<Footer />}></Route>
 
           <Route path="/map" element={<Content />}></Route>
           <Route path="/signup" element={ <SignUp />}></Route>

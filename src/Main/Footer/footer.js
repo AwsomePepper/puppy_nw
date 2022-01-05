@@ -50,7 +50,7 @@ function Footer() {
     <footer className="py-4 fixed-bottom" style={{'background':'#2196F3', 'opacity':'0.8' }}>
       
       <div className="container" >
-        <div className="w-100 p-2" >Width 100%</div>
+        <div class="w-100 p-2"></div>
         <p className="m-0 text-center text-white" > 
         <img src={wIcon} /> 온도:{cTemp}  
         {position.desc}</p></div>
