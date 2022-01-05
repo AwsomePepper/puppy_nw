@@ -7,7 +7,6 @@ import { Carousel } from 'react-bootstrap';
 import Footer from '../Footer/footer';
 
 
-
 const Content2 = () => { //슬라이드 배너 
 
     return (

@@ -4,6 +4,7 @@ import './Nav.css';
 
 
 function Nav()  {  //메뉴
+    const userLogin = false;
 
     return (
       

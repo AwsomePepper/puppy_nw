@@ -28,9 +28,7 @@ function SignIn () {
                 window.location = '/map'
               } else {
                 console.log('fail');
-
               }
-
             })
 
           }}>

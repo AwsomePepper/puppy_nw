@@ -51,7 +51,6 @@ function Map() {
   return (
     <div>
       <form onSubmit={onMessageSubmit}>
-        <h1>Messenger</h1>
         <div>
           <TextField
             name="name"
@@ -67,7 +66,7 @@ function Map() {
             value={state.message}
             id="outlined-multiline-static"
             variant="outlined"
-            label="Message"
+            label="latitude"
           />
         </div>
         <div>
@@ -77,14 +76,14 @@ function Map() {
             value={state.message2}
             id="outlined-multiline-static"
             variant="outlined"
-            label="Message2"
+            label="longitude"
           />
         </div>
-        <button>Send Message</button>
+        <button>Send Location</button>
       </form>
       <div>
-        <h1>Chat Log</h1>
-        {renderChat()}
+        {/* <h1>Chat Log</h1>
+        {renderChat()} */}
       </div>
       <div>
         <Content chat={chat[chat.length - 1]} />
