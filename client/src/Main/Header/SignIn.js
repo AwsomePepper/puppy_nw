@@ -28,7 +28,7 @@ function SignIn () {
                 console.log(res.data);
                 sessionStorage.setItem('email', res.data.email);
                 sessionStorage.setItem('name', res.data.name);
-                //window.location = '/map'
+                window.location = '/'
 
                 // console.log(res.data.pmeet);
               } else {

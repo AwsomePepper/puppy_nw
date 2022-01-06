@@ -8,9 +8,7 @@ import axios from 'axios';
 
 function Nav()  {  //메뉴
 
-  useEffect(() => {
-    console.log(sessionStorage.getItem('name'));
-  })
+ 
     
     return (
       <div>
@@ -30,7 +28,7 @@ function Nav()  {  //메뉴
               <li className="nav-item"><a className="nav-link" href="/signin">Log In</a></li>
               <li className="nav-item"><a className="nav-link" href="/signup">Sign Up</a></li>
               <li className="nav-item"><a className="nav-link" href="/mypage">My Page</a></li>
-              <li className="nav-item"><a className="nav-link" href="/">Log Out&nbsp;</a></li>
+              <li className="nav-item"><a className="nav-link" href="/" >Log Out</a></li>
 
             </ul>
           

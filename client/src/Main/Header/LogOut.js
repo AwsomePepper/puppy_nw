@@ -4,9 +4,7 @@ import Header from './Header';
 
 //로그아웃 기능 아직 구현 안됨 
 function SignOut() {
-    useEffect(() => {
-         sessionStorage.clear();
-    })
+   
 
     return (
         <div>
