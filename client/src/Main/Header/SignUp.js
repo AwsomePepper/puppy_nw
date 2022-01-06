@@ -19,12 +19,12 @@ const SignUp = () => {
           formData.append("name", name);
 
           axios({
-            url: 'http://127.0.0.1:8080/api/signup',
+            url: 'http://localhost:8080/signup',
             method: 'post',
             data: formData,
           }).then((res) => {
             console.log(res.data);
-            window.locattion = '/';
+            window.locattion = '/signin';
           }); //response
         }}>
            <div className="mb-3 input-group flex-nowrap" style={{'width':'90%','height':'20%'}}>

@@ -7,7 +7,7 @@ import Footer from './Main/Footer/footer';
 import Nav from './Main/Nav/nav';
 import SignUp from './Main/Header/SignUp';
 import SignIn from './Main/Header/SignIn';
-// import Header from './Main/Header/Header';
+import Header from './Main/Header/Header';
 import Image from './Main/Content/Image';
 import Map from './Main/Content/map';
 import Content2 from './Main/Content/Content2';
@@ -22,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      {/* <Header/> */}
+      <Footer></Footer>
+      <Header/> 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Image />}></Route>
@@ -32,8 +33,7 @@ function App() {
           {/* <Route path="/MyPage" element={<MyPage />}></Route> */}
         </Routes>
       </BrowserRouter>
-     <Content2 />
-     <Footer></Footer>
+     <Content2  />
      <Footer2 />
      
 

@@ -7,55 +7,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer2 = () => {
     return (
     <footer class="site-footer">
-      <div class="container">
+      <div class="container fixed" style={{'height':'150px'}}>
         <div class="row">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6" >
             <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <p class="text-justify">It's fun to take a stroll with a dog!</p>
+            <p class="text-justify">🐶We Love Dog🐶</p>
           </div>
 
-          <div class="col-xs-6 col-md-3">
+          <div class="col-xs-6 col-md-3" >
             <h6>Categories</h6>
             <ul class="footer-links">
-              <li><a href="http://localhost:3000/">C</a></li>
-              <li><a href="http://localhost:3000/">UI Design</a></li>
-              <li><a href="http://localhost:3000/">PHP</a></li>
-              <li><a href="http://localhost:3000/">Java</a></li>
-              <li><a href="http://localhost:3000/">Android</a></li>
-              <li><a href="http://localhost:3000/">Templates</a></li>
+              <li>Adress : 서울시 강남구 압구정로</li>
+              <li>Call : 070-7777-7777</li>
+              <li>전화 상담 시간 : 9:00 - 18:00</li>
+              <li>전화 상담 불가 시간: 12:00 - 14:00</li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href= "http://localhost:3000/">About Us</a></li>
               <li><a href="http://localhost:3000/">Contact Us</a></li>
-              <li><a href="http://localhost:3000/">Contribute</a></li>
-              <li><a href="http://localhost:3000/">Privacy Policy</a></li>
-              <li><a href="http://localhost:3000/">Sitemap</a></li>
             </ul>
           </div>
         </div>
         <hr></hr>
       </div>
-      <div class="container">
+      <div class="container fixed-bottom" >
         <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
+          <div class="col-md-5 col-sm-6 col-xs-12"style={{'margin':'auto'}}>
+            <p class="copyright-text ">Copyright &copy; 2022 All Rights Reserved by 
+         <a> MTW</a>.
             </p>
           </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
-        </div>
+         </div> 
       </div>
 </footer>
   
