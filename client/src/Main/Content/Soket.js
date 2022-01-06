@@ -1,7 +1,7 @@
 import TextField from "@material-ui/core/TextField"
 import io from "socket.io-client"
 import { useEffect, useRef, useState } from "react"
-import Content from "./Map"
+import Map from "./map"
 
 //map 화면 구성 메시지 받고, socket연결
 function Soket() {
@@ -86,7 +86,7 @@ function Soket() {
         {renderChat()} */}
       </div>
       <div>
-        <Content chat={chat[chat.length - 1]} />
+        <Map chat={chat[chat.length - 1]} />
       </div>
     </div>
 

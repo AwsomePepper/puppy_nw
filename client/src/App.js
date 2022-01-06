@@ -10,9 +10,9 @@ import SignIn from './Main/Header/SignIn';
 import BodyImage from './Main/Content/BodyImage';
 import Soket from './Main/Content/Soket';
 import Banner from './Main/Content/Banner';
-import Footer from './Main/Footer/Footer';
-import MyPage from './Main/MyPage/MyPage';
 import Weather from './Main/Footer/Wheather';
+import MyPage from './Main/MyPage/mypage';
+import Footer from './Main/Footer/footer';
 
 
 
