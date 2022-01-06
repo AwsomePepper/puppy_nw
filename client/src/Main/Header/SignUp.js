@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <div class="container mt-5">
       <div className= "row justify-content-center"
-        style={{'margin':'auto','margin-bottom':'200px','margin-top':'200px','width':'900px'}}>
+        style={{'margin':'auto','margin-bottom':'200px','margin-top':'200px','width':'600px'}}>
         <form onSubmit={(e) => {
           e.preventDefault();
           const formData = new FormData();
@@ -27,20 +27,20 @@ const SignUp = () => {
             window.locattion = '/';
           }); //response
         }}>
-          <div class="mb-3">
-            <label for="email">Email:</label>
-            <input type="text" class="form-control" id="email" name="email" />
+           <div className="mb-3 input-group flex-nowrap" style={{'width':'90%','height':'20%'}}>
+              <span className="input-group-text">✉️</span>
+              <input type="text" className="form-control" name="email" placeholder="email" />
+            </div>
+            <div className="mb-3 input-group flex-nowrap" style={{'width':'90%','height':'20%'}}>
+              <span className="input-group-text">🔒</span>
+              <input type="password" className="form-control" name="pwd" placeholder="password" />
           </div>
-          <div class="mb-3">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" name="pwd" />
+          <div className="mb-3 input-group flex-nowrap" style={{'width':'90%','height':'20%'}}>
+              <span className="input-group-text">😊</span>
+              <input type="password" className="form-control" name="name" placeholder="name" />
           </div>
-          <div class="mb-3">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" />
-          </div>
-          <div class="d-grid gap-2">
-            <button style={{ 'backgroundColor': '#2C6BB2' }} class="btn" id="signup">Sign Up</button>
+          <div class="d-grid gap-2" style={{'width':'70%','height':'20%','margin':'auto'}}>
+            <button style={{ 'backgroundColor': '#4DB6AC' }} class="btn" id="signup">Sign Up</button>
           </div>
         </form>
       </div>

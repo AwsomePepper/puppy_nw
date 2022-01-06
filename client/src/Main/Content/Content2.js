@@ -10,9 +10,8 @@ import Footer from '../Footer/footer';
 const Content2 = () => { //슬라이드 배너 
 
     return (
-     
-      <div style={{ display: 'block', width: '100%','margin-top':'100px'
-     }}> 
+      <div style={{backgroundColor:'#E0E0E0', display: 'block', width: '100%','margin-top':'100px'
+      }}> 
       <Carousel variant="dark">
         <Carousel.Item>
           <img
@@ -41,7 +40,6 @@ const Content2 = () => { //슬라이드 배너
       </Carousel>
   
     </div>
-  
     )
   }
 
