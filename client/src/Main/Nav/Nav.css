@@ -1,12 +1,40 @@
 @import url(
     'https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@900&family=Jua&display=swap');
-.nav-item{
+
+    .nav-item{
     font-family: 'Gothic A1', sans-serif;
     
 }
-.text{
+.text1{
     font-family:'Black Han Sans', sans-serif;
-    color: rgb(91, 91, 95);
+    color: #FFE082;
     font-size: 45px;
 
+}
+.text2{
+    font-family:'Black Han Sans', sans-serif;
+    color: #8D6E63;
+    font-size: 45px;
+
+}
+
+.text3{
+    font-family:'Black Han Sans', sans-serif;
+    color: #8D6E63;
+    font-size: 45px;
+
+}
+
+.text4{
+    font-family:'Black Han Sans', sans-serif;
+    color: #8D6E63;
+    font-size: 45px;
+
+}
+
+.navbar{
+    border-bottom: 1.5px solid #BDBDBD;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }

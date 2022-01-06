@@ -47,11 +47,11 @@ function Footer() {
 
   return (
     
-    <footer className="py-3" style={{'background':'#E0E0E0', 'opacity':'0.8' }}>
+    <footer className="py-5" style={{'background':'#E0E0E0'}}>
       
       <div className="container" >
         <div class="w-100 p-2"></div>
-        <p className="m-0 text-green" > 
+        <p className="m-0 text-black" style={{'font-size':'20px'}}  > 
         <img src={wIcon} /> 온도:{cTemp}  
         {position.desc}</p></div>
        
