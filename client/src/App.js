@@ -11,6 +11,8 @@ import SignIn from './Main/Header/SignIn';
 import Image from './Main/Content/Image';
 import Map from './Main/Content/map';
 import Content2 from './Main/Content/Content2';
+import Footer2 from './Main/Footer/footer2';
+// import MyPage from './Main/Header/myPage';
 
 
 
@@ -32,6 +34,7 @@ function App() {
       </BrowserRouter>
      <Content2 />
      <Footer></Footer>
+     <Footer2 />
      
 
     </div>

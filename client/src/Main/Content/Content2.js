@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import icon2 from './신규회원 배너.png';
 import icon3 from './사료 배너 .png';
-import icon4 from './산책 배너.png';
+import icon4 from './산책 배너2.png';
 import { Carousel } from 'react-bootstrap';
 import Footer from '../Footer/footer';
 
@@ -10,8 +10,10 @@ import Footer from '../Footer/footer';
 const Content2 = () => { //슬라이드 배너 
 
     return (
+      //슬라이드 크기 위치 지정 
       <div style={{backgroundColor:'#E0E0E0', display: 'block', width: '100%','margin-top':'100px'
       }}> 
+
       <Carousel variant="dark">
         <Carousel.Item>
           <img
