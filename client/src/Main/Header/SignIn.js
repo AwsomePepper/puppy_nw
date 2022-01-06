@@ -3,9 +3,6 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import Header from './Header';
 
-
-
-
 function SignIn () {
     return (
       <div>
@@ -28,9 +25,14 @@ function SignIn () {
             }).then((res) => {
               console.log(res.data);
               if(res.data) {
-                window.location = '/map'
+                console.log(res.data);
+                sessionStorage.setItem('email', res.data.email);
+                sessionStorage.setItem('name', res.data.name);
+                //window.location = '/map'
+
+                // console.log(res.data.pmeet);
               } else {
-                console.log('fail');
+                alert('fail');
               }
             })
 

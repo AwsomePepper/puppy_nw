@@ -1,20 +1,26 @@
 
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import './Nav.css';
 import Header from '../Header/Header';
+import axios from 'axios';
+
 
 
 function Nav()  {  //메뉴
-    const userLogin = false;
 
+  useEffect(() => {
+    console.log(sessionStorage.getItem('name'));
+  })
+    
     return (
       <div>
       <nav style={{ 'backgroundColor':'#E0E0E0'}} className="navbar navbar-expand-lg navbar-light justify-content-center  naver-fixed-top">
           <div style={{'text-align':'center'}}></div>
+          <div>{sessionStorage.getItem('name')+"님 접속"}</div>
             <div className='text1'>&nbsp;&nbsp;&nbsp;멍</div>
             <div className='text2'>&nbsp;트</div>
             <div className='text3'>&nbsp;워</div>
-            <div className='text4'>&nbsp;크</div>
+            <div className='text4'>&nbsp;크 </div>
             <img src='./images/logo.png' style={{'margin-left':'10px','margin-right':'10px'}}/>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

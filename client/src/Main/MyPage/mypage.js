@@ -4,6 +4,12 @@ import React, { useEffect, useContext, useState } from "react";
 import Header from "../Header/Header";
 
 function MyPage() {
+
+    useEffect(() => {
+        // console.log(sessionStorage.getItem('name'));
+      })
+      
+
     // const [userData, setUserData] = useState({
     //     email: "",
     //     name: "",
@@ -44,13 +50,13 @@ function MyPage() {
                         'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                     }} >
                     <span className="input-group-text " >🙂 닉네임:</span>
-                    <li className="form-control" >&nbsp;&nbsp; </li> </div>
+                    <li className="form-control" >{sessionStorage.getItem('name')} </li> </div>
                 <div className="mb-1 input-group flex-nowrap "
                     style={{
                         'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                     }} >
                     <span className="input-group-text " >🙂 이메일:</span>
-                    <li className="form-control" >&nbsp;&nbsp; </li>
+                    <li className="form-control" >{sessionStorage.getItem('email')} </li>
                 </div>
 
 
