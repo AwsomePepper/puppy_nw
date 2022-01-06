@@ -4,8 +4,9 @@ import { useEffect, useRef, useState } from "react"
 import Map from "./map"
 
 //map 화면 구성 메시지 받고, socket연결
-function Soket() {
-  const [state, setState] = useState({ message: "", message2: "", name: "" })
+function Soket(pName) {
+
+  const [state, setState] = useState({ name: pName, message: "", message2: "" })
   const [chat, setChat] = useState([{}])
 
   const socketRef = useRef()
@@ -34,31 +35,13 @@ function Soket() {
     e.preventDefault()
   }
 
-  //message render html
-  const renderChat = () => {
-    return (chat.map(({ name, message, message2 }, index) => (
-      <div key={index}>
-        <h3>
-          {name}: <span>{message},{message2}</span>
-        </h3>
-      </div>
-    )
-    ))
-  }
+
 
 
   //App function return 
   return (
     <div>
       <form onSubmit={onMessageSubmit}>
-        <div>
-          <TextField
-            name="name"
-            onChange={(e) => onTextChange(e)}
-            value={state.name}
-            label="Name"
-          />
-        </div>
         <div>
           <TextField
             name="message"

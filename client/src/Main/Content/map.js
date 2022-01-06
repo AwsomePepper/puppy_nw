@@ -9,17 +9,14 @@ var map = null;
 
 export default function Map({ chat }) {
 
-    console.log({ chat });
-    console.log(chat.name);
-
-    const [markuser, setMarkUser] = useState( {user: chat.name});
 
     useEffect(() => {
         mapscript({ chat });
     }, []);
 
     useEffect(() => {
-        markAdd(chat.name, chat.message, chat.message2);
+        markAdd(chat.name.pName, chat.message, chat.message2);
+        
     }, [chat]);
 
 
@@ -63,11 +60,7 @@ export default function Map({ chat }) {
         console.log(user);
         // 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다
         var iwContent = ' <div style="padding:10px; " >' + 
-            sessionStorage.getItem('pName') + '<br/>'+
-            sessionStorage.getItem('pAge') + '<br/>'+
-            sessionStorage.getItem('pGender') + '<br/>'+
-            sessionStorage.getItem('pBreed') + '<br/>'+
-            sessionStorage.getItem('pMeet') + 
+            user+
             '</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
         // 인포윈도우를 생성합니다
         var infowindow = new kakao.maps.InfoWindow({

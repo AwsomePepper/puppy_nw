@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "NodeJs Practice",
   "main": "index.js",
-  
   "author": "hoing",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "express-socket.io-session": "^1.3.5",
     "internal": "^2.0.27",
+    "session.socket.io": "^0.2.1",
     "socket.io": "^4.4.0"
   }
 }

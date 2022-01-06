@@ -1,9 +1,10 @@
 
 import axios from 'axios';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Header from './Header';
 
 function SignIn () {
+
     return (
       <div>
         <Header />
@@ -23,10 +24,8 @@ function SignIn () {
               method: 'post',
               data: formData
             }).then((res) => {
-              console.log(res.data.name);
-              console.log(res.data.puppyList[0]);
+              let pNameStr='', pAgeStr=0, pGenderStr='', pBreedStr='', pMeetStr='';
               if(res.data) {
-                let pNameStr='', pAgeStr=0, pGenderStr='', pBreedStr='', pMeetStr='';
                 for (let i = 0; i < res.data.puppyList.length; i++) {
                   pNameStr += res.data.puppyList[i].pname +'   ';
                   pAgeStr += res.data.puppyList[i].page +'   ';
@@ -34,6 +33,7 @@ function SignIn () {
                   pBreedStr += res.data.puppyList[i].pbreed +'   ';
                   pMeetStr += res.data.puppyList[i].pmeet +'   ';
                 }
+                
 
                 sessionStorage.setItem('name', res.data.name);
                 sessionStorage.setItem('email', res.data.email);
@@ -47,8 +47,8 @@ function SignIn () {
                 // sessionStorage.setItem('name', res.data.puppyList);
                 // sessionStorage.setItem('email', res.data.puppyList);
                 //window.location = '/'
+                
 
-                // console.log(res.data.pmeet);
               } else {
                 alert('fail');
               }
