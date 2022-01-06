@@ -62,7 +62,13 @@ export default function Map({ chat }) {
         //마커에 인포 윈도우 클릭 이벤트 등록! 
         console.log(user);
         // 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다
-        var iwContent = '<div style="padding:5px;">user: ' + user + '</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        var iwContent = ' <div style="padding:10px; " >' + 
+            sessionStorage.getItem('pName') + '<br/>'+
+            sessionStorage.getItem('pAge') + '<br/>'+
+            sessionStorage.getItem('pGender') + '<br/>'+
+            sessionStorage.getItem('pBreed') + '<br/>'+
+            sessionStorage.getItem('pMeet') + 
+            '</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
         // 인포윈도우를 생성합니다
         var infowindow = new kakao.maps.InfoWindow({
             content: iwContent

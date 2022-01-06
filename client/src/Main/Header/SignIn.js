@@ -23,12 +23,30 @@ function SignIn () {
               method: 'post',
               data: formData
             }).then((res) => {
-              console.log(res.data);
+              console.log(res.data.name);
+              console.log(res.data.puppyList[0]);
               if(res.data) {
-                console.log(res.data);
-                sessionStorage.setItem('email', res.data.email);
+                let pNameStr='', pAgeStr=0, pGenderStr='', pBreedStr='', pMeetStr='';
+                for (let i = 0; i < res.data.puppyList.length; i++) {
+                  pNameStr += res.data.puppyList[i].pname +'   ';
+                  pAgeStr += res.data.puppyList[i].page +'   ';
+                  pGenderStr += res.data.puppyList[i].pgender +'   ';
+                  pBreedStr += res.data.puppyList[i].pbreed +'   ';
+                  pMeetStr += res.data.puppyList[i].pmeet +'   ';
+                }
+
                 sessionStorage.setItem('name', res.data.name);
-                window.location = '/'
+                sessionStorage.setItem('email', res.data.email);
+                sessionStorage.setItem('pName', pNameStr); //강아지 이름
+                sessionStorage.setItem('pAge', pAgeStr); //강아지 나이
+                sessionStorage.setItem('pGender', pGenderStr);   //강아지 성별
+                sessionStorage.setItem('pBreed', pBreedStr); //견종
+                sessionStorage.setItem('pMeet', pMeetStr); //사회성 정도 (상/중/하)
+                // sessionStorage.setItem('email', res.data.puppyList);
+                // sessionStorage.setItem('email', res.data.puppyList);
+                // sessionStorage.setItem('name', res.data.puppyList);
+                // sessionStorage.setItem('email', res.data.puppyList);
+                //window.location = '/'
 
                 // console.log(res.data.pmeet);
               } else {

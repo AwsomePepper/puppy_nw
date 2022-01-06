@@ -42,13 +42,13 @@ function MyPage() {
                             'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                         }} >
                         <span className="input-group-text " >🐶 이름: </span>
-                        <li className="form-control" >&nbsp;&nbsp; </li> </div>
+                        <li className="form-control" >{sessionStorage.getItem('pName')}</li> </div>
                     <div className="mb-1 input-group flex-nowrap "
                         style={{
                             'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                         }} >
                         <span className="input-group-text " >🐶 나이:</span>
-                        <li className="form-control" >&nbsp;&nbsp; </li>
+                        <li className="form-control" >{sessionStorage.getItem('pAge')}</li>
 
                     </div>
                     <div className="mb-1 input-group flex-nowrap "
@@ -56,7 +56,7 @@ function MyPage() {
                             'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                         }} >
                         <span className="input-group-text " >🐶 성별:</span>
-                        <li className="form-control" >&nbsp;&nbsp; </li>
+                        <li className="form-control" >{sessionStorage.getItem('pGender')}</li>
 
                     </div>
                     <div className="mb-1 input-group flex-nowrap "
@@ -64,7 +64,7 @@ function MyPage() {
                             'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                         }} >
                         <span className="input-group-text " >🐶 견종:</span>
-                        <li className="form-control" >&nbsp;&nbsp; </li>
+                        <li className="form-control" >{sessionStorage.getItem('pBreed')}</li>
 
                     </div>
                     <div className="mb-1 input-group flex-nowrap "
@@ -72,7 +72,7 @@ function MyPage() {
                             'width': '100%', 'height': '30%', 'margin': 'auto', 'margin': 'center',
                         }} >
                         <span className="input-group-text " >🐶 사교:</span>
-                        <li className="form-control" >&nbsp;&nbsp; </li>
+                        <li className="form-control" >{sessionStorage.getItem('pMeet')}</li>
 
                     </div>
                 </div>
