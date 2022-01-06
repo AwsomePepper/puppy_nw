@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import icon2 from './신규회원 배너.png';
-import icon3 from './사료 배너 .png';
-import icon4 from './산책 배너2.png';
+import icon3 from './사료 배너.png';
+import icon4 from './산책 배너.png';
 import { Carousel } from 'react-bootstrap';
 import Footer from '../Footer/footer';
 
