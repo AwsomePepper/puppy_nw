@@ -1,9 +1,7 @@
-@import url(
-    'https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@900&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
 
 .add{
-    font-family:'Black Han Sans', sans-serif;
-    color: rgb(91, 91, 95);
-    font-size: 45px;
-
-}
+    font-family: 'Licorice', cursive;
+    font-size: 75px;
+  }

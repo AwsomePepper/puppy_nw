@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 function SignIn () {
     return (
         <div className="row justify-content-center"
-        style={{'margin':'auto','margin-bottom':'200px','margin-top':'200px','width':'700px'}}>          
+        style={{'margin':'auto','margin-bottom':'200px','margin-top':'100px','width':'700px'}}>          
         <form  onSubmit={(e) => {
             e.preventDefault(); //form의 기본기능 막기
             const email = e.target['0'].value;

@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <div class="container mt-5">
       <div className= "row justify-content-center"
-        style={{'margin':'auto','margin-bottom':'200px','margin-top':'200px','width':'600px'}}>
+        style={{'margin':'auto','margin-bottom':'200px','margin-top':'100px','width':'600px'}}>
         <form onSubmit={(e) => {
           e.preventDefault();
           const formData = new FormData();
@@ -24,7 +24,7 @@ const SignUp = () => {
             data: formData,
           }).then((res) => {
             console.log(res.data);
-            window.locattion = '/signin';
+            window.location = '/signin';
           }); //response
         }}>
            <div className="mb-3 input-group flex-nowrap" style={{'width':'90%','height':'20%'}}>

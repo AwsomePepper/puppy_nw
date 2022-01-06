@@ -47,13 +47,16 @@ function Footer() {
 
   return (
     
-    <footer className="py-5" style={{'background':'#E0E0E0'}}>
+    <footer className="py-5" style={{'background':'#E0E0E0','margin-left':'70%'}} >
       
       <div className="container" >
-        <div class="w-100 p-2"></div>
-        <p className="m-0 text-black" style={{'font-size':'20px'}}  > 
-        <img src={wIcon} /> 온도:{cTemp}  
+        {/* <div class="w-20 "></div> */}
+        <p className="text-black" style={{'font-size':'30px'}}  > 
+        <div>
+        <img src={wIcon}  /><a>&nbsp;현재 날씨 :&nbsp;</a>{cTemp} 
+        </div>
         {position.desc}</p></div>
+        
        
     </footer>
 

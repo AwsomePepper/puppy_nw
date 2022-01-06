@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
 .App {
   text-align: center;
 
@@ -23,7 +28,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Licorice', cursive;
+  font-size: 35px;
 }
+
+.add {
+  font-family: 'Licorice', cursive;
+  font-size: 75px;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -37,7 +50,6 @@
     transform: rotate(360deg);
   }
 }
-
 /* footer  */
 .site-footer
 { font-family: 'Gothic A1', sans-serif;
@@ -46,6 +58,11 @@
   font-size:15px;
   line-height:24px;
   color:#737373;
+}
+
+.py-5{
+  font-family:'Nanum Pen Script', cursive;
+      
 }
 .site-footer hr
 {
