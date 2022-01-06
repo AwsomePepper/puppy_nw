@@ -7,10 +7,11 @@ import { Carousel } from 'react-bootstrap';
 
 
 
-const Content2 = () => { //슬라이드 배너 
+const Banner = () => { //슬라이드 배너 
 
     return (
       //슬라이드 크기 위치 지정 
+      
       <div style={{ 'width': '100%','margin-top':'80px' }}> 
       
       <Carousel variant="dark">
@@ -44,7 +45,7 @@ const Content2 = () => { //슬라이드 배너
     )
   }
 
-  export default Content2;
+  export default Banner;
 
 
 

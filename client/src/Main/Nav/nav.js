@@ -1,13 +1,14 @@
 
 import React, { Component } from 'react';
 import './Nav.css';
+import Header from '../Header/Header';
 
 
 function Nav()  {  //메뉴
     const userLogin = false;
 
     return (
-      
+      <div>
       <nav style={{ 'backgroundColor':'#E0E0E0'}} className="navbar navbar-expand-lg navbar-light justify-content-center  naver-fixed-top">
           <div style={{'text-align':'center'}}></div>
             <div className='text1'>&nbsp;&nbsp;&nbsp;멍</div>
@@ -29,6 +30,7 @@ function Nav()  {  //메뉴
           
         </div>
       </nav>
+      </div>
   
     )
   }
