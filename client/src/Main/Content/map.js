@@ -9,16 +9,15 @@ var map = null;
 
 export default function Map({ chat }) {
 
-
     useEffect(() => {
         mapscript({ chat });
     }, []);
 
     useEffect(() => {
-        markAdd(chat.name.pName, chat.message, chat.message2);
-        
+        console.log(chat);
+        console.log(chat.name);
+        markAdd(chat.name, chat.message, chat.message2);
     }, [chat]);
-
 
     //내 위치 중심 지도시작(처음)
     const mapscript = () => {

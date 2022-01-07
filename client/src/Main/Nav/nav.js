@@ -14,7 +14,6 @@ function Nav()  {  //메뉴
       <div>
       <nav style={{ 'backgroundColor':'#E0E0E0'}} className="navbar navbar-expand-lg navbar-light justify-content-center  naver-fixed-top">
           <div style={{'text-align':'center'}}></div>
-          <div>{sessionStorage.getItem('name')+"님 접속"}</div>
             <div className='text1'>&nbsp;&nbsp;&nbsp;멍</div>
             <div className='text2'>&nbsp;트</div>
             <div className='text3'>&nbsp;워</div>

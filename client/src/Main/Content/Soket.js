@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import Map from "./map"
 
 //map 화면 구성 메시지 받고, socket연결
-function Soket(pName) {
+function Soket({pName}) {
 
   const [state, setState] = useState({ name: pName, message: "", message2: "" })
   const [chat, setChat] = useState([{}])
@@ -14,7 +14,7 @@ function Soket(pName) {
   //소켓연결, 메시지 전송
   useEffect(() => {
     //socketRef.current = io.connect("http://localhost:4000") //소켓 연결 시도
-    socketRef.current = io.connect("http://192.168.200.199:4000") //소켓 연결 시도
+    socketRef.current = io.connect("http://192.168.0.4:4000") //소켓 연결 시도
     socketRef.current.on("message", ({ name, message, message2 }) => {
       setChat([...chat, { name, message, message2 }])
     })

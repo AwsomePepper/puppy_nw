@@ -42,7 +42,11 @@ function Weather() {
       <div className="container" >
         <p className="text-black" style={{'font-size':'30px'}}  > 
         <div>
-        <img src={position.wIcon}/><a>&nbsp;현재 날씨 :&nbsp;{(position.temp-273).toFixed(2)} </a>
+        <div>
+        <div className="connect" style={{'font-size':'20px'}}>
+          {sessionStorage.getItem,"🌻"+('name')+"님 접속"}</div>
+        <img src={position.wIcon}/><a>현재 날씨 :&nbsp;{(position.temp-273).toFixed(2)} </a>
+        </div>
         </div>
         {position.desc}</p></div>
     </footer>

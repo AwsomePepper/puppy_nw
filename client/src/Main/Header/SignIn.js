@@ -46,7 +46,8 @@ function SignIn () {
                 // sessionStorage.setItem('email', res.data.puppyList);
                 // sessionStorage.setItem('name', res.data.puppyList);
                 // sessionStorage.setItem('email', res.data.puppyList);
-                //window.location = '/'
+
+                // window.location = '/map'
                 
 
               } else {

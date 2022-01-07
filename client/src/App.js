@@ -28,7 +28,6 @@ function App() {
   const pBreed = sessionStorage.getItem('pBreed');
   const pMeet = sessionStorage.getItem('pMeet');
 
-
   return (
     <div className="App">
       <Nav />
