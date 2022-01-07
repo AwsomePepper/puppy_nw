@@ -16,8 +16,8 @@ function Weather() {
   useEffect(() => {
     console.log('날씨정보 조회');
     const cityName = 'Seoul';
-    const apiKey = "";
-    //'fa4b07a80b959ffc78d0ac7f7a65125a'; <- apiKey에 넣기
+    const apiKey = "fa4b07a80b959ffc78d0ac7f7a65125a";
+    //''; <- apiKey에 넣기
     const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + apiKey;
 
     //axios 라이브러리 이용 
@@ -44,7 +44,7 @@ function Weather() {
         <div>
         <div>
         <div className="connect" style={{'font-size':'20px'}}>
-          {sessionStorage.getItem,"🌻"+('name')+"님 접속"}</div>
+        🌻{sessionStorage.getItem('name')}님 접속</div>
         <img src={position.wIcon}/><a>현재 날씨 :&nbsp;{(position.temp-273).toFixed(2)} </a>
         </div>
         </div>

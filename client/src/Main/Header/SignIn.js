@@ -49,6 +49,7 @@ function SignIn () {
 
                 // window.location = '/map'
                 
+                alert(sessionStorage.getItem('name')+'님 환영합니다!');
 
               } else {
                 alert('fail');
