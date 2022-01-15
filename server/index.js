@@ -8,7 +8,6 @@ const io = require('socket.io')(server,{
     }
 });
 
-
 io.on('connection', socket=>{
     socket.on('message',({name,message,message2}) => {
         io.emit('message',({name, message, message2}))

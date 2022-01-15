@@ -1,5 +1,6 @@
 import { Component, useEffect, useRef, useState } from "react";
 import React from "react";
+import { Socket } from "socket.io-client";
 
 const { kakao, cloud } = window;
 let mapRef = null;
@@ -33,13 +34,21 @@ export default function Map({ chat }) {
                 markAdd(position.coords.latitude, position.coords.longitude);
             })
         }
-
     }
 
-
     //마커찍기 + 인포윈도우 
-    const markAdd = (user, lat, lng) => {
+    const markAdd = (upInfo, lat, lng) => {
+        
+        console.log(upInfo);
+
+        // console.log(upInfo[0]);
+        // var str2 = ["이름", "반려견 이름", "반려견 나이","반려견 성별","견종","사회성"];
+        
+        // for(var i=0; i<upInfo.length; i++){
+        //     htmlIn += str[i]+": "+str2[i] + '</br>'
+        // }
         // 마커를 생성합니다
+        
         var imageSrc = './images/marker.png', // 마커이미지의 주소입니다    
             imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
             imageOption = { offset: new kakao.maps.Point(0, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니
@@ -54,13 +63,13 @@ export default function Map({ chat }) {
         })
         marker.setMap(map);
 
-
         //마커에 인포 윈도우 클릭 이벤트 등록! 
-        console.log(user);
+        console.log(upInfo);
         // 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다
         var iwContent = ' <div style="padding:10px; " >' + 
-            user+
+       upInfo+
             '</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+
         // 인포윈도우를 생성합니다
         var infowindow = new kakao.maps.InfoWindow({
             content: iwContent
@@ -77,7 +86,6 @@ export default function Map({ chat }) {
         });
     }
 
-
     return (
         <div style={{ padding: '20px' }}>
             <div id='map' style={
@@ -85,9 +93,7 @@ export default function Map({ chat }) {
                 <div></div>
             </div>
         </div>
-
     );
-
 }
 
 export { Map };

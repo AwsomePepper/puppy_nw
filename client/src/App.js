@@ -20,13 +20,7 @@ import Footer from './Main/Footer/footer';
 function App() {
 
   //세션값 변수에 저장 
-  const uName = sessionStorage.getItem('name');
-  const uEmail = sessionStorage.getItem('email');
-  const pName = sessionStorage.getItem('pName');
-  const pAge = sessionStorage.getItem('pAge');
-  const pGender = sessionStorage.getItem('pGender');
-  const pBreed = sessionStorage.getItem('pBreed');
-  const pMeet = sessionStorage.getItem('pMeet');
+  
 
   return (
     <div className="App">
@@ -36,7 +30,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<BodyImage  />}></Route>
-          <Route path="/map" element={<Soket pName={pName}/>}></Route>
+          <Route path="/map" element={<Soket />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/signin" element={<SignIn />}></Route>
           <Route path="/MyPage" element={<MyPage />}></Route>

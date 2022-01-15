@@ -34,7 +34,6 @@ function SignIn () {
                   pMeetStr += res.data.puppyList[i].pmeet +'   ';
                 }
                 
-
                 sessionStorage.setItem('name', res.data.name);
                 sessionStorage.setItem('email', res.data.email);
                 sessionStorage.setItem('pName', pNameStr); //강아지 이름
@@ -42,12 +41,6 @@ function SignIn () {
                 sessionStorage.setItem('pGender', pGenderStr);   //강아지 성별
                 sessionStorage.setItem('pBreed', pBreedStr); //견종
                 sessionStorage.setItem('pMeet', pMeetStr); //사회성 정도 (상/중/하)
-                // sessionStorage.setItem('email', res.data.puppyList);
-                // sessionStorage.setItem('email', res.data.puppyList);
-                // sessionStorage.setItem('name', res.data.puppyList);
-                // sessionStorage.setItem('email', res.data.puppyList);
-
-                // window.location = '/map'
                 
                 alert(sessionStorage.getItem('name')+'님 환영합니다!');
 
@@ -78,7 +71,3 @@ function SignIn () {
 
 
   export default SignIn;
-
-
-
-

@@ -4,9 +4,19 @@ import { useEffect, useRef, useState } from "react"
 import Map from "./map"
 
 //map 화면 구성 메시지 받고, socket연결
-function Soket({pName}) {
+function Soket() {
 
-  const [state, setState] = useState({ name: sessionStorage.getItem('pName'), message: "", message2: "" })
+  const uName = sessionStorage.getItem('name');
+  const uEmail = sessionStorage.getItem('email');
+  const pName = sessionStorage.getItem('pName');
+  const pAge = sessionStorage.getItem('pAge');
+  const pGender = sessionStorage.getItem('pGender');
+  const pBreed = sessionStorage.getItem('pBreed');
+  const pMeet = sessionStorage.getItem('pMeet');
+
+  const infoUser = [uName, pName, pAge, pGender, pBreed, pMeet]
+    
+  const [state, setState] = useState({ name: infoUser, message: "", message2: "" })
   const [chat, setChat] = useState([{}])
 
   const socketRef = useRef()
@@ -14,7 +24,7 @@ function Soket({pName}) {
   //소켓연결, 메시지 전송
   useEffect(() => {
     //socketRef.current = io.connect("http://localhost:4000") //소켓 연결 시도
-    socketRef.current = io.connect("http://192.168.0.23:4000") //소켓 연결 시도
+    socketRef.current = io.connect("http://172.16.101.124:4000") //소켓 연결 시도
     socketRef.current.on("message", ({ name, message, message2 }) => {
       setChat([...chat, { name, message, message2 }])
     })
@@ -34,9 +44,6 @@ function Soket({pName}) {
     socketRef.current.emit("message", { name, message, message2 })
     e.preventDefault()
   }
-
-
-
 
   //App function return 
   return (
@@ -72,8 +79,6 @@ function Soket({pName}) {
         <Map chat={chat[chat.length - 1]} />
       </div>
     </div>
-
   )
 }
-
 export default Soket;
