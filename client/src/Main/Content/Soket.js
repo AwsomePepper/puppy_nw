@@ -24,7 +24,7 @@ function Soket() {
   //소켓연결, 메시지 전송
   useEffect(() => {
     //socketRef.current = io.connect("http://localhost:4000") //소켓 연결 시도
-    socketRef.current = io.connect("http://172.16.100.33:4000") //소켓 연결 시도
+    socketRef.current = io.connect("http://192.168.216.1:4000") //소켓 연결 시도
     socketRef.current.on("message", ({ name, message, message2 }) => {
       setChat([...chat, { name, message, message2 }])
     })
