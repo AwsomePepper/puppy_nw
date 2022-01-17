@@ -39,7 +39,7 @@ const SignUp = () => {
           </div>
           <div className="mb-3 input-group flex-nowrap" style={{'width':'90%','height':'20%'}}>
               <span className="input-group-text">😊</span>
-              <input type="password" className="form-control" name="name" placeholder="이름" />
+              <input type="text" className="form-control" name="name" placeholder="이름" />
           </div>
           <div class="d-grid gap-2" style={{'width':'70%','height':'20%','margin':'auto'}}>
             <button style={{ 'backgroundColor': '#4DB6AC' }} class="btn" id="signup">Sign Up</button>
